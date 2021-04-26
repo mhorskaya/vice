@@ -23,6 +23,9 @@ namespace Vice.CodeAnalysis.Binding
                 case SyntaxKind.BinaryExpression:
                     return BindBinaryExpression((BinaryExpressionSyntax)syntax);
 
+                case SyntaxKind.ParenthesizedExpression:
+                    return BindExpression(((ParenthesizedExpressionSyntax)syntax).Expression);
+
                 default:
                     throw new Exception($"Unexpected syntax {syntax.Kind}");
             }
