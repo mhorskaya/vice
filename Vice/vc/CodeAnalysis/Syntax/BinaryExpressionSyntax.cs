@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Vice.CodeAnalysis
+namespace Vice.CodeAnalysis.Syntax
 {
-    internal sealed class BinaryExpressionSyntax : ExpressionSyntax
+    public sealed class BinaryExpressionSyntax : ExpressionSyntax
     {
         public BinaryExpressionSyntax(ExpressionSyntax left, SyntaxToken operatorToken, ExpressionSyntax right)
         {

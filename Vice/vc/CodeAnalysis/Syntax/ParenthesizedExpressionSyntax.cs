@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Vice.CodeAnalysis
+namespace Vice.CodeAnalysis.Syntax
 {
-    internal sealed class ParenthesizedExpressionSyntax : ExpressionSyntax
+    public sealed class ParenthesizedExpressionSyntax : ExpressionSyntax
     {
         public ParenthesizedExpressionSyntax(SyntaxToken openParenthesisToken, ExpressionSyntax expression, SyntaxToken closeParenthesisToken)
         {

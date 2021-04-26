@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Vice.CodeAnalysis
+namespace Vice.CodeAnalysis.Syntax
 {
-    internal abstract class SyntaxNode
+    public abstract class SyntaxNode
     {
         public abstract SyntaxKind Kind { get; }
 
