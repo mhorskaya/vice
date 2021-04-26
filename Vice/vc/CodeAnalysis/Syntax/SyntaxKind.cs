@@ -14,6 +14,8 @@
         BangToken,
         AmpersandAmpersandToken,
         PipePipeToken,
+        EqualsEqualsToken,
+        BanqEqualsToken,
         OpenParenthesisToken,
         CloseParenthesisToken,
         IdentifierToken,

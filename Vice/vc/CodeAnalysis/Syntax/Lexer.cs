@@ -110,9 +110,6 @@ namespace Vice.CodeAnalysis.Syntax
                 case ')':
                     return new SyntaxToken(SyntaxKind.CloseParenthesisToken, _position++, ")", null);
 
-                case '!':
-                    return new SyntaxToken(SyntaxKind.BangToken, _position++, "!", null);
-
                 case '&':
                     if (Lookahead == '&')
                     {
@@ -128,6 +125,24 @@ namespace Vice.CodeAnalysis.Syntax
                     }
 
                     break;
+
+                case '=':
+                    if (Lookahead == '=')
+                    {
+                        return new SyntaxToken(SyntaxKind.EqualsEqualsToken, _position += 2, "==", null);
+                    }
+
+                    break;
+
+                case '!':
+                    if (Lookahead == '=')
+                    {
+                        return new SyntaxToken(SyntaxKind.BanqEqualsToken, _position += 2, "!=", null);
+                    }
+                    else
+                    {
+                        return new SyntaxToken(SyntaxKind.BangToken, _position++, "!", null);
+                    }
             }
 
             _diagnostics.Add($"ERROR: bad character input: '{Current}'");
