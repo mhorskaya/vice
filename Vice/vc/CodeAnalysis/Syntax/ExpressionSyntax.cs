@@ -1,4 +1,4 @@
-﻿namespace Vice.CodeAnalysis
+﻿namespace Vice.CodeAnalysis.Syntax
 {
     public abstract class ExpressionSyntax : SyntaxNode
     {

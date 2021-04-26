@@ -1,4 +1,5 @@
 ﻿using System;
+using Vice.CodeAnalysis.Syntax;
 
 namespace Vice.CodeAnalysis
 {

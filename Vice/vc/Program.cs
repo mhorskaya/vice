@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Vice.CodeAnalysis;
+using Vice.CodeAnalysis.Syntax;
 
 namespace Vice
 {

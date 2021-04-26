@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Vice.CodeAnalysis
+namespace Vice.CodeAnalysis.Syntax
 {
     internal sealed class Lexer
     {
